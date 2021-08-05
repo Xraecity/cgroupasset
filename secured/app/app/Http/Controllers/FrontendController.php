@@ -33,7 +33,7 @@ use Illuminate\Http\Request;
 class FrontendController extends Controller
 {
     public function index()
-    {
+    { 
         $basic = GeneralSettings::first();
         $data['page_title'] = "Home";
         $data['currency'] = Currency::whereStatus(1)->orderBy('symbol','asc')->get();
